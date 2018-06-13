@@ -36,7 +36,8 @@ void loop() {
 
   // Print to the LCD (in decimal)
   lcd.setCursor(0, 0);
-  lcd.print(SensorVal, DEC);
+  //lcd.print(SensorVal, DEC);
+  lcd.print(SensorVal);
 
   delay(100);    // Delay between reading measurements for added stability.
   //delay(500); //test delay
