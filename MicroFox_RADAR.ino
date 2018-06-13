@@ -20,6 +20,7 @@ void setup() {
 
   // Initialize the LCD at 16x2
   lcd.begin(16, 2);
+  lcd.clear();
 
   // Initialize the input pin
   pinMode(Output, INPUT);
