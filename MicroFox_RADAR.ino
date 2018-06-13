@@ -13,8 +13,6 @@ int Output = 6;
 void setup() {
   // Serial communications at 9600 baud rate
   Serial.begin(9600);
-  lcd.begin(16, 2);
-  lcd.print(Serial);
   //
   pinMode(Output, INPUT);
 }
@@ -26,4 +24,5 @@ void loop() {
   // print out the state of sensor:
   Serial.println(SensorVal);
   delay(0.5);    // Delay between reading measurements for added stability.
+  lcd.print(Serial);
 }
